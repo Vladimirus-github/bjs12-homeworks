@@ -13,7 +13,8 @@ function averageMark(a, g, p) {
 
   let average = (algebra + geography + physics) / 3;
 
-  return average.toFixed(2);
+  return average;
+  // return average.toFixed(2);
 }
 
 // ниже см. альтернативное решение.
@@ -22,7 +23,7 @@ function averageMark(a, g, p) {
 function sayHello(userName) {
   let myName = userName;
 
-  let message = `Hello World! Меня зовут ${userName}.`;
+  let message = `Привет, мир! Меня зовут ${userName}`;
 
   return message;
 }
