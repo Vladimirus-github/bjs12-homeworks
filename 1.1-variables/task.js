@@ -13,8 +13,8 @@ function averageMark(a, g, p) {
 
   let average = (algebra + geography + physics) / 3;
 
-  return average;
-  // return average.toFixed(2);
+  //   return average;
+  return average.toFixed(2);
 }
 
 // ниже см. альтернативное решение.
