@@ -203,6 +203,14 @@ class StudentLog {
   }
 
   getTotalAverage() {
+    let averages = [];
+    for (let subj in this.scoolSubject) {
+      averages.push(this.getAverageBySubject(subj));
+    }
+
+    return averages.reduce((x, y) => x + y) / averages.length;
+
+    /*
     if (Object.values(this.scoolSubject).length === 0) {
       return 0;
     } else {
@@ -215,6 +223,7 @@ class StudentLog {
       }
       return ddd.reduce((x, y) => x + y) / ddd.length;
     }
+    */
   }
 }
 
