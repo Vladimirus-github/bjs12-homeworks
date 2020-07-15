@@ -12,7 +12,7 @@ function validateCount(parseValue) {
   } catch (e) {
     return e;
   }
-  return Number.parseInt(parseValue);
+  return parseCount(parseValue);
 }
 
 // Задание №2 Треугольник
